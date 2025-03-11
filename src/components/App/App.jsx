@@ -12,8 +12,8 @@ export default function App() {
     }
     return Tasks;
   });
-  const [fileter, setFilter] = useState("");
 
+  const [fileter, setFilter] = useState("");
   const searchContact = tasks.filter((task) =>
     task.name.toLowerCase().includes(fileter.toLowerCase())
   );
